@@ -26,7 +26,7 @@ def get_db():
 # #Database Connection Setup without ORM straight!
 # while True:
 #     try:
-#         conn = psycopg2.connect(host = '127.0.0.1', database = 'fastapi', user='postgres', password = 'dhdo0815', cursor_factory=RealDictCursor)
+#         conn = psycopg2.connect(host = '127.0.0.1', database = 'fastapi', user='postgres', password = 'passworddhdo', cursor_factory=RealDictCursor)
 #         cursor = conn.cursor()
 #         print('Database connection was succesful!')
 #         break
