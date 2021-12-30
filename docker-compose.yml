@@ -4,7 +4,7 @@ services:
   api:
       build: .
       depends_on:
-        -postgres
+        - postgres
       ports:
           - 8000:8000
       #command: univcorn app.main:app --host 0.0.0.0 --port 8000
@@ -26,7 +26,7 @@ services:
       - POSTGRES_DB=${DATABASE_NAME}
 
     volumes:
-      - postgres-db: /var/lib/postgresql/data 
+      - postgres-db:/var/lib/postgresql/data 
 volumes: 
   postgres-db:
 
